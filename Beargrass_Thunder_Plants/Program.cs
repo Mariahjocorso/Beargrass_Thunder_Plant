@@ -1,37 +1,45 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
+﻿using BeargrassThunderPlants;
+using System.Text.Json;
+using System.Text.Json.Serialization;
 
 
-namespace BeargrassThunderPlants
+Console.WriteLine("Press 1 to add a product");
+Console.WriteLine("Type 'exit' to quit");
+
+string userInput = Console.ReadLine();
+
+while (userInput.ToLower() != "exit")
 
 {
-    internal class Program
-{
-    static void Main(string[] args)
+    if (userInput == "1")
     {
-        Console.WriteLine("How many types of flowers do you want to add? ");
-        var numberOfRecords = int.Parse(Console.ReadLine());
+        var flower = new Flowers();
 
+        Console.WriteLine("Creating a flower...");
 
+        Console.Write("Enter the name of the flower: ");
+        flower.Name = Console.ReadLine();
 
-        var recordList = new List<Flowers>();
-        for (int i = 0; i < numberOfRecords; i++)
-        {
-            // In this loop, populate the object's properties using Console.ReadLine()
-            var entry = new Flowers();
+        Console.Write("Enter the height in inches: ");
+        flower.Height = int.Parse(Console.ReadLine());
 
-            Console.WriteLine("Enter the flower color: ");
-            entry.Color = Console.ReadLine();
+        Console.Write("Enter the color of the flower bloom: ");
+        flower.Color = Console.ReadLine();
 
+        Console.Write("Give the product a short description: ");
+        flower.Description = Console.ReadLine();
 
-            recordList.Add(new Flowers() { Color = entry.Color });
-        }
+        Console.Write("Give the product a price: ");
+        flower.Price = decimal.Parse(Console.ReadLine());
 
-        // Print out the list of records using Console.WriteLine()
-        foreach (var entry in recordList)
-        Console.WriteLine("\nFlower: " + entry.Color + "\n");
+        Console.Write("How many products do you have on hand? ");
+        flower.Quantity = int.Parse(Console.ReadLine());
 
+        Console.WriteLine(JsonSerializer.Serialize(flower));
     }
+
+    Console.WriteLine("Press 1 to add a product");
+    Console.WriteLine("Type 'exit' to quit");
+    userInput = Console.ReadLine();
 }
-}
+

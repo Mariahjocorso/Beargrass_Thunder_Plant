@@ -1,0 +1,15 @@
+C:\Users\maria\source\repos\BeargrassThunderPlants\obj\Debug\net6.0\BeargrassThunderPlants.csproj.AssemblyReference.cache
+C:\Users\maria\source\repos\BeargrassThunderPlants\obj\Debug\net6.0\BeargrassThunderPlants.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\maria\source\repos\BeargrassThunderPlants\obj\Debug\net6.0\BeargrassThunderPlants.AssemblyInfoInputs.cache
+C:\Users\maria\source\repos\BeargrassThunderPlants\obj\Debug\net6.0\BeargrassThunderPlants.AssemblyInfo.cs
+C:\Users\maria\source\repos\BeargrassThunderPlants\obj\Debug\net6.0\BeargrassThunderPlants.csproj.CoreCompileInputs.cache
+C:\Users\maria\source\repos\BeargrassThunderPlants\bin\Debug\net6.0\BeargrassThunderPlants.exe
+C:\Users\maria\source\repos\BeargrassThunderPlants\bin\Debug\net6.0\BeargrassThunderPlants.deps.json
+C:\Users\maria\source\repos\BeargrassThunderPlants\bin\Debug\net6.0\BeargrassThunderPlants.runtimeconfig.json
+C:\Users\maria\source\repos\BeargrassThunderPlants\bin\Debug\net6.0\BeargrassThunderPlants.dll
+C:\Users\maria\source\repos\BeargrassThunderPlants\bin\Debug\net6.0\BeargrassThunderPlants.pdb
+C:\Users\maria\source\repos\BeargrassThunderPlants\obj\Debug\net6.0\BeargrassThunderPlants.dll
+C:\Users\maria\source\repos\BeargrassThunderPlants\obj\Debug\net6.0\refint\BeargrassThunderPlants.dll
+C:\Users\maria\source\repos\BeargrassThunderPlants\obj\Debug\net6.0\BeargrassThunderPlants.pdb
+C:\Users\maria\source\repos\BeargrassThunderPlants\obj\Debug\net6.0\BeargrassThunderPlants.genruntimeconfig.cache
+C:\Users\maria\source\repos\BeargrassThunderPlants\obj\Debug\net6.0\ref\BeargrassThunderPlants.dll

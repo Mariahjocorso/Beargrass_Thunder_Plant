@@ -1,8 +1,18 @@
-﻿namespace BeargrassThunderPlants
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-{ 
-    internal class Flowers : Seeds // child class
+namespace BeargrassThunderPlants
+{
+    public class Flowers : Plants
     {
-        public string? Color { get; set; }
+
+        public string Color { get; set; }
+
+        public int Height { get; set; }
+
+
     }
 }
