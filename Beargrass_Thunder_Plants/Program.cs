@@ -2,8 +2,11 @@
 using System.Text.Json;
 using System.Text.Json.Serialization;
 
+var plantLogic = new PlantLogic();
 
 Console.WriteLine("Press 1 to add a product");
+Console.WriteLine("Press 2 to view a flower product");
+Console.WriteLine("Press 3 to view in stock products");
 Console.WriteLine("Type 'exit' to quit");
 
 string userInput = Console.ReadLine();
@@ -35,11 +38,31 @@ while (userInput.ToLower() != "exit")
         Console.Write("How many products do you have on hand? ");
         flower.Quantity = int.Parse(Console.ReadLine());
 
-        Console.WriteLine(JsonSerializer.Serialize(flower));
+        plantLogic.AddPlant(flower);
+        Console.WriteLine("Added a flower");
+    }
+    if (userInput == "2")
+    {
+    Console.Write("What is the name of the flower you would like to view? ");
+    var flowerName = Console.ReadLine();
+    var flower = plantLogic.GetFlowersByName(flowerName);
+    Console.WriteLine(JsonSerializer.Serialize(flower));
+    Console.WriteLine();
+    }
+    if (userInput == "3")
+    {
+        Console.WriteLine("The following products are in stock: ");
+        var inStock = plantLogic.GetOnlyInStockProducts();
+        foreach (var item in inStock)
+        {
+            Console.WriteLine(item);
+        }
+        Console.WriteLine();
     }
 
     Console.WriteLine("Press 1 to add a product");
+    Console.WriteLine("Press 2 to view a Flower Product");
+    Console.WriteLine("Press 3 to view in stock products");
     Console.WriteLine("Type 'exit' to quit");
     userInput = Console.ReadLine();
 }
-
